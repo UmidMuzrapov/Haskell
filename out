@@ -1,0 +1,3 @@
+*Main> "TESTING START"
+fe :: [[Char]] -> [[a]]
+Leaving GHCi.

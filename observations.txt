@@ -1,0 +1,8 @@
+Hours: 20
+Initially, I could not solve some of the more difficult problems such as "cpfx" and "squares". The problem was how I wrote my Haskell code.
+I tried to write the code from top to bottom, but this resulted in type inconsistencies and incorrect outputs.
+
+Then, I changed my strategy. I abstractly defined the function on paper from top to bottom, but I wrote the code from bottom to top.
+Defining the function's type signature at each step helped me to stay on track and gradually progress from a helper function to the main function.
+
+
