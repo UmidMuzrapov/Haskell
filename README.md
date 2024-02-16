@@ -19,6 +19,7 @@ Make these assumptions:
 
 Here's an example with one square:
 
+```
 > drawSquares [(2,2,5,"+-")]
 ........
 ........
@@ -28,6 +29,7 @@ Here's an example with one square:
 ..+---+.
 ..+++++.
 ........
+```
 
 Note that drawSquares, like printN and charbox in the section A little output (slide 167+), produces output. To avoid tangling with the details of I/O in Haskell for this problem, start your drawSquares function with the following three lines of code:
 
@@ -46,13 +48,14 @@ drawSquaresHW _ = putStr result
         result = ".....\n.+++.\n.+-+.\n.+++.\n.....\n"
 
 Execution:
-
+```
 > drawSquaresHW () -- "unit" (slide 169) for its unused parameter
 .....
 .+++.
 .+-+.
 .+++.
 .....
+```
 
 Again, I hope that drawSquaresHW doesn't confuse! It's intended to show the connection between
 
@@ -61,7 +64,7 @@ Again, I hope that drawSquaresHW doesn't confuse! It's intended to show the conn
     The output being produced. 
 
 Here's a drawing with four squares:
-
+```
 > drawSquares [(2,2,5,"Aa"), (12,0,4,"Bb"), (9,5,3,"C "),
                (17,8,2,"Dd")]
 ............BBBB....
@@ -75,6 +78,7 @@ Here's a drawing with four squares:
 .................DD.
 .................DD.
 ....................
+```
 
 Due to character cells themselves not being square, the "squares" aren't square either. Their aspect ratio is actually close to 1:2 but we'll ignore that!
 
